@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="45.481077">
+<testcase classname="search of products on iceland webpage" name="go to iceland webpage and check for products" time="45.481077">
+<failure message="java.lang.AssertionError: &#10;Expected: a string containing &quot;juice&quot;&#10;     but: was &quot;Search results for ‘Juice’&quot;&#13;&#10;&#9;at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)&#13;&#10;&#9;at org.junit.Assert.assertThat(Assert.java:865)&#13;&#10;&#9;at org.junit.Assert.assertThat(Assert.java:832)&#13;&#10;&#9;at iceLand.Steps.SearchSteps.user_must_be_able_to_see_list_of_related_products(SearchSteps.java:33)&#13;&#10;&#9;at ✽.Then user must be able to see list of related products(src/test/Feature/Search.feature:8)&#13;&#10;"><![CDATA[Given user is on iceland webpage............................................passed
+When user click on search bar...............................................passed
+And user enter name of prodcuts "<juice>"...................................passed
+And user click  on search button............................................passed
+Then user must be able to see list of related products......................failed
+
+StackTrace:
+java.lang.AssertionError: 
+Expected: a string containing "juice"
+     but: was "Search results for ‘Juice’"
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:865)
+	at org.junit.Assert.assertThat(Assert.java:832)
+	at iceLand.Steps.SearchSteps.user_must_be_able_to_see_list_of_related_products(SearchSteps.java:33)
+	at ✽.Then user must be able to see list of related products(src/test/Feature/Search.feature:8)
+]]></failure>
+</testcase>
+</testsuite>
